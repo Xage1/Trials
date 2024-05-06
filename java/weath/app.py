@@ -8,8 +8,8 @@ from flask import Flask, request, jsonify
 from flask_pymongo import PyMongo
 
 
-API_KEY = 
-BASE_URL = 'http://api.openweathermap.org/data/2.5/weather'
+API_KEY = '35391bf0e26dc5c88a21b99255729f66' 
+BASE_URL = 'http://api.openweathermap.org/geo/1.0/direct?q=London&limit=5&appid=35391bf0e26dc5c88a21b99255729f66'
 
 app = Flask(__name__)
 app.config['MONGO_URI'] = 'mongodb://localhost:27017/farmer_weather'
@@ -60,3 +60,7 @@ def get_weather():
         return jsonify(weather_data), 200
     else:
         return jsonify({'error': 'Failed to fetch weather data'}), response.status_code
+
+
+    if __name__ == '__main__':
+        app.run(debug=True)
