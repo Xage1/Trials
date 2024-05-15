@@ -1,1 +1,1 @@
-console.log("Tsup, Boners");
+import "./styles/styles.css";
