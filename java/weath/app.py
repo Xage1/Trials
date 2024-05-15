@@ -9,7 +9,7 @@ from flask_pymongo import PyMongo
 
 
 API_KEY = '35391bf0e26dc5c88a21b99255729f66' 
-BASE_URL = 'http://api.openweathermap.org/geo/1.0/direct?q=London&limit=5&appid=35391bf0e26dc5c88a21b99255729f66'
+BASE_URL = 'http://api.openweathermap.org/geo/1.0/direct?q=Nairobi&limit=5&appid=35391bf0e26dc5c88a21b99255729f66'
 
 app = Flask(__name__)
 app.config['MONGO_URI'] = 'mongodb://localhost:27017/farmer_weather'
